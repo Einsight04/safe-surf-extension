@@ -5,5 +5,5 @@ for (let word of badWords) {
     const replace = `\\b${word}\\b`;
     const re = new RegExp(replace, "gi");
 
-    document.body.innerHTML = document.body.innerHTML.replace(re, '****');
+    document.body.innerHTML = document.body.innerHTML.replace(re, '*'.repeat(word.length));
 }
